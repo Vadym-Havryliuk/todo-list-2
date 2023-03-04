@@ -1,0 +1,23 @@
+.three-buttons {
+    display: flex;
+    width: 176px;
+    border-radius: 4px;
+}
+
+.three-buttons button {
+    flex-grow: 1;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.three-buttons button:first-child  {
+    border-radius: 4px 0px 0px 4px;
+    color: white;
+    background-color: #17A2B8;
+}
+
+.three-buttons button:last-child {
+    border-radius: 0px 4px 4px 0px;
+}

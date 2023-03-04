@@ -1,0 +1,10 @@
+.todo-list {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.search-filter {
+    display: flex;
+    justify-content: space-between;
+}
+

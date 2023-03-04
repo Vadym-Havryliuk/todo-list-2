@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: Arial;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.header span {
+    font-size: 20px;
+    font-weight: 600;
+    color: gray;
+}

@@ -1,0 +1,70 @@
+.list-items {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.item {
+    border: 1px solid grey;
+    font-family: Arial;
+    font-size: 20px;
+    padding: 8px 15px 8px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item:first-child {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.item:last-child {
+    border-radius: 0px 0px 4px 4px;
+}
+
+.important-text {
+    font-weight: bold;
+    color: #4682B4;
+}
+
+.delete {
+    color: #ff0000;
+    border: 1px solid red;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    margin-right: 6px;
+    padding: 6px 10px 4px 10px;
+    cursor: pointer;
+}
+
+.delete:hover {
+    color: white;
+    background-color: red;
+}
+
+.important {
+    color: rgb(10, 187, 10);
+    border: 1px solid rgb(10, 187, 10);
+    background-color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 6px 10px 4px 10px;
+    cursor: pointer;
+}
+
+.important:hover {
+    background-color:rgb(10, 187, 10);
+    color: white;
+}
+
+.line {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.line-t {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
