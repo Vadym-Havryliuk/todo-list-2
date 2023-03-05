@@ -1,12 +1,37 @@
+import React from 'react';
+
 import './add-item.css';
 
-const AddItem = () => {
-    return (
-        <form actions="#">
-            <input type="text" placeholder="What needs to be done?"/>
-            <button type="submit">Add</button>
-        </form>
-    );
-};
+export default class AddItem extends React.Component {
+    state = {
+        text: ''
+    };
 
-export default AddItem;
+    changeInput = (e) => {
+        this.setState({
+            text: e.target.value
+        });
+    };
+
+    createItem = (e) => {
+        e.preventDefault();
+        this.props.addItem(this.state.text);
+
+        this.setState({
+            text: ''
+        });
+    }
+    
+    render() {
+        
+        return (
+            <form actions="#" onSubmit={this.createItem}>
+                <input type="text" placeholder="What needs to be done?"
+                value={this.state.text} onChange={this.changeInput} />
+                <button type="submit">
+                    Add
+                </button>
+            </form>
+        );
+    }
+}
